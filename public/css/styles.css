@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
@@ -10,10 +10,10 @@
 
 html {
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
+  /*font-weight: 700;*/
+  font-size: 14px;
   /*TODO: remove this later*/
+  color: #25262C;
 }
 
 body {
@@ -21,24 +21,152 @@ body {
 }
 
 /* THEME */
-.highlight {
-  color: #FFFFFF;
+header, footer {
+  width: inherit;
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
 }
 
-header {
+.highlight, .copyright-text {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+header, .features, footer {
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+}
+
+header, footer, .features h2{
   color: #1ACAC8;
+  background-color: #25262C;
+  font-weight: 700;
+}
+
+.features, .copyright-box {
+  text-align: center;
+}
+
+.features h3 {
+  background-color: #1ACAC8;
+  font-weight: 900;
+}
+
+.banner {
+  height: 266px;
+  background-image: url('/images/scenery.png');
+  background-size: cover;
+  background-position: right;
+}
+
+.main {
+  background-color: #FFFFFF;
+}
+
+.logo {
+  float: left;
+  background-image: url('/images/logo.png');
+  background-position: 10px 0;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  height: 50px;
+  margin-top: -16px;
+}
+
+.logo h1 {
+    font-size: 1.3em;
+    letter-spacing: .2em;
+    padding-top: 17px;
+    padding-left: 100px;
+}
+
+nav {
+  float: right;
+}
+
+span.menu-icon {
+font-size: 2.3em;
+line-height: .5em;
+padding-right: 14px;
+}
+
+.lead {
+  font-size: 1.7em;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.row > ul:nth-child(1) {
+  float: left;
+}
+
+.row > ul:nth-child(3) {
+  float: right;
+}
+
+footer .row {
+  padding: 34px 38px;
+  line-height: 30px;
+}
+
+footer .copyright-box {
+  padding: 10px 0 32px 0;
 }
 
 /* SMALL-LAYOUT */
 /*TODO: check if stuff breaks at 480 or not*/
 @media only screen and (max-width: 480px) {
+  ul.nav-bar {
+    display: none;
+  }
+  
+  .row > ul:nth-child(2) {
+    display: none;
+  }
+
+  .lead {
+    /*height + padding = 320px*/
+    padding: 35px;
+    line-height: 1.3em;
+    /*box shadow below*/
+    -webkit-box-shadow: inset 0 10px 10px -5px #ccc;
+    -moz-box-shadow: inset 0 10px 10px -5px #ccc;
+    box-shadow: inset 0 10px 10px -5px #ccc;
+  }
+
   header {
-    height: 78px;
-    background-color: #25262C;
+    /*height + padding = 66px*/
+    height: 16px;
+    padding: 25px 0 25px 0;
+  }
+
+  .features h2 {
+    /*height + padding = 46*/
+    height: 14px;
+    padding: 16px 0;
+    line-height: 15px;
+  }
+
+  .features h3 {
+    /*height + padding = 54px*/
+    height: 22px;
+    padding: 16px 0px;
+    line-height: 24px;
+    margin: auto;
+    border-top: solid 1px #13918E;
+
+  }
+
+  footer {
+    /*height: 294px;*/
+  }
+
+  footer .row {
+    /*height: 214px;*/
+  }
+
+  footer .copyright-box {
+    /*height: 80px;*/
   }
 }
 
-400
-768
-1200
-1500
