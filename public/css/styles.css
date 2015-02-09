@@ -47,9 +47,22 @@ header, footer, .features h2{
   text-align: center;
 }
 
+.features h2 {
+  /*height + padding = 46*/
+  height: 14px;
+  padding: 16px 0;
+  line-height: 15px;
+}
+
 .features h3 {
   background-color: #1ACAC8;
   font-weight: 900;
+  /*height + padding = 54px*/
+  height: 22px;
+  padding: 16px 0px;
+  line-height: 24px;
+  margin: auto;
+  border-top: solid 1px #13918E;
 }
 
 .banner {
@@ -82,22 +95,42 @@ header, footer, .features h2{
 
 nav {
   float: right;
+  /*background-color: orange;*/
+}
+
+.nav-bar > li {
+  display: inline-block;
+  padding: 12px;
+  /*background-color: red;*/
 }
 
 span.menu-icon {
-font-size: 2.3em;
-line-height: .5em;
-padding-right: 14px;
+  font-size: 2.3em;
+  line-height: .5em;
+  padding-right: 14px;
 }
 
 .lead {
   font-size: 1.7em;
   font-weight: 700;
   letter-spacing: 0.8px;
+  /*height + padding = 320px*/
+  padding: 35px;
+  line-height: 1.3em;
+  /*box shadow below*/
+  -webkit-box-shadow: inset 0 10px 10px -5px #ccc;
+  -moz-box-shadow: inset 0 10px 10px -5px #ccc;
+  box-shadow: inset 0 10px 10px -5px #ccc;
 }
 
 .row > ul:nth-child(1) {
   float: left;
+  padding: 0 0 0 2%;
+}
+
+.row > ul:nth-child(2) {
+  float: left;
+  padding: 0 0 0 18%;
 }
 
 .row > ul:nth-child(3) {
@@ -113,9 +146,18 @@ footer .copyright-box {
   padding: 10px 0 32px 0;
 }
 
+a {
+  color: #1ACAC8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
 /* SMALL-LAYOUT */
 /*TODO: check if stuff breaks at 480 or not*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   ul.nav-bar {
     display: none;
   }
@@ -124,14 +166,8 @@ footer .copyright-box {
     display: none;
   }
 
-  .lead {
-    /*height + padding = 320px*/
-    padding: 35px;
-    line-height: 1.3em;
-    /*box shadow below*/
-    -webkit-box-shadow: inset 0 10px 10px -5px #ccc;
-    -moz-box-shadow: inset 0 10px 10px -5px #ccc;
-    box-shadow: inset 0 10px 10px -5px #ccc;
+  .row > ul:nth-child(3) {
+    padding: 0 1% 0 0 ;
   }
 
   header {
@@ -139,34 +175,34 @@ footer .copyright-box {
     height: 16px;
     padding: 25px 0 25px 0;
   }
-
-  .features h2 {
-    /*height + padding = 46*/
-    height: 14px;
-    padding: 16px 0;
-    line-height: 15px;
-  }
-
-  .features h3 {
-    /*height + padding = 54px*/
-    height: 22px;
-    padding: 16px 0px;
-    line-height: 24px;
-    margin: auto;
-    border-top: solid 1px #13918E;
-
-  }
-
-  footer {
-    /*height: 294px;*/
-  }
-
-  footer .row {
-    /*height: 214px;*/
-  }
-
-  footer .copyright-box {
-    /*height: 80px;*/
-  }
 }
 
+/* MEDIUM-LAYOUT */
+/*TODO: check if stuff breaks at 768 or not*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  span.menu-icon {
+    display: none;
+  }
+
+  header {
+    padding: 50px 28px 22px 35px;
+  }
+
+  .logo {
+    background-position: 10px 10px;
+    height: 80px;
+  }
+  
+  .logo span {
+    display: block;
+  }
+
+  .logo h1 {
+    padding-left: 98px;
+  }
+
+  .row > ul:nth-child(3) {
+    padding: 0 9% 0 0 ;
+  }
+
+}
