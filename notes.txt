@@ -1,0 +1,62 @@
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+body {
+  background-color: red;
+}
+
+//border, top
+//nav li hover
+
+.main
+.features
+
+most text (li)
+  text-transform: uppercase;
+
+
+
+dark blue:
+#25262C
+
+teal:
+#1ACAC8
+
+white:
+#FFFFFF
+
+"grey":
+#E2E2E2
+
+
+
+
+
+78px
+  nav bar
+
+46px
+  features
+54px
+  stuff in features
+#13918E
+
+320px
+  lead p
+
+294px - footer
+  214px - nav
+  80px - copyright box
+
+
+
+
+400
+768
+1200
+1500
