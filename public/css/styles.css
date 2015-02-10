@@ -10,9 +10,7 @@
 
 html {
   font-family: 'Lato', sans-serif;
-  /*font-weight: 700;*/
   font-size: 14px;
-  /*TODO: remove this later*/
   color: #25262C;
 }
 
@@ -35,7 +33,6 @@ header, footer {
   height: 56px;
   margin: -15px 0 0 10px;
   z-index: 0;
-  /*background-color: orange;*/
 }
 
 .logo h1 {
@@ -65,7 +62,6 @@ header, footer, .features h2{
 }
 
 .features h2 {
-  /*height + padding = 46*/
   height: 14px;
   padding: 16px 0;
   line-height: 15px;
@@ -74,7 +70,6 @@ header, footer, .features h2{
 .features h3 {
   background-color: #1ACAC8;
   font-weight: 900;
-  /*height + padding = 54px*/
   height: 22px;
   padding: 16px 0px;
   line-height: 24px;
@@ -95,13 +90,11 @@ header, footer, .features h2{
 
 nav {
   float: right;
-  /*background-color: orange;*/
 }
 
 .nav-bar > li {
   display: inline-block;
   padding: 12px;
-  /*background-color: red;*/
 }
 
 span.menu-icon {
@@ -114,7 +107,6 @@ span.menu-icon {
   font-size: 1.7em;
   font-weight: 700;
   letter-spacing: 0.8px;
-  /*height + padding = 320px*/
   padding: 35px 0 0 0;
   line-height: 1.3em;
 }
@@ -179,7 +171,6 @@ a:hover {
   }
 
   header {
-    /*height + padding = 66px*/
     height: 16px;
     padding: 25px 0 25px 0;
   }
