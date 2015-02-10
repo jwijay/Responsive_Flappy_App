@@ -27,6 +27,24 @@ header, footer {
   background-repeat: repeat-x;
 }
 
+.logo-image {
+  float: left;
+  background-image: url('/images/logo.png');
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  width: 86px;
+  height: 56px;
+  margin: -15px 0 0 10px;
+  z-index: 0;
+  /*background-color: orange;*/
+}
+
+.logo h1 {
+  font-size: 1.3em;
+  letter-spacing: .2em;
+  padding-top: 17px 0 0 100px;
+}
+
 .highlight, .copyright-text {
   color: #FFFFFF;
   font-weight: 700;
@@ -66,7 +84,7 @@ header, footer, .features h2{
 }
 
 .banner {
-  height: 266px;
+  height: 260px;
   background-image: url('/images/scenery.png');
   background-size: cover;
   background-position: right;
@@ -74,23 +92,6 @@ header, footer, .features h2{
 
 .main {
   background-color: #FFFFFF;
-}
-
-.logo {
-  float: left;
-  background-image: url('/images/logo.png');
-  background-position: 10px 0;
-  background-repeat: no-repeat;
-  background-size: 80px auto;
-  height: 50px;
-  margin-top: -16px;
-}
-
-.logo h1 {
-    font-size: 1.3em;
-    letter-spacing: .2em;
-    padding-top: 17px;
-    padding-left: 100px;
 }
 
 nav {
@@ -115,22 +116,18 @@ span.menu-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   /*height + padding = 320px*/
-  padding: 35px;
+  padding: 35px 0 0 0;
   line-height: 1.3em;
-  /*box shadow below*/
-  -webkit-box-shadow: inset 0 10px 10px -5px #ccc;
-  -moz-box-shadow: inset 0 10px 10px -5px #ccc;
-  box-shadow: inset 0 10px 10px -5px #ccc;
 }
 
 .row > ul:nth-child(1) {
   float: left;
-  padding: 0 0 0 2%;
+  margin: 0 0 0 2%;
 }
 
 .row > ul:nth-child(2) {
   float: left;
-  padding: 0 0 0 18%;
+  margin: 0 0 0 18%;
 }
 
 .row > ul:nth-child(3) {
@@ -157,7 +154,11 @@ a:hover {
 
 /* SMALL-LAYOUT */
 /*TODO: check if stuff breaks at 480 or not*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 750px) {
+  nav {
+    margin: -18px 0 0 0;
+  }
+
   ul.nav-bar {
     display: none;
   }
@@ -167,7 +168,15 @@ a:hover {
   }
 
   .row > ul:nth-child(3) {
-    padding: 0 1% 0 0 ;
+    margin: 0 1% 0 0 ;
+  }
+
+  .lead {
+    padding: 35px;
+    /*box shadow below*/
+    -webkit-box-shadow: inset 0 10px 10px -5px #ccc;
+    -moz-box-shadow: inset 0 10px 10px -5px #ccc;
+    box-shadow: inset 0 10px 10px -5px #ccc;
   }
 
   header {
@@ -179,30 +188,176 @@ a:hover {
 
 /* MEDIUM-LAYOUT */
 /*TODO: check if stuff breaks at 768 or not*/
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 751px) and (max-width: 1194px) {
   span.menu-icon {
     display: none;
   }
 
   header {
-    padding: 50px 28px 22px 35px;
+    padding: 50px 4% 38px 4%;
   }
 
-  .logo {
-    background-position: 10px 10px;
-    height: 80px;
-  }
-  
-  .logo span {
+  .logo .highlight {
     display: block;
   }
 
+  .logo-image {
+    margin: -5px 0 0 10px;
+  }
+
   .logo h1 {
-    padding-left: 98px;
+    float: left;
+  }
+
+  .lead {
+    padding: 35px;
+    /*box shadow below*/
+    -webkit-box-shadow: inset 0 10px 10px -5px #ccc;
+    -moz-box-shadow: inset 0 10px 10px -5px #ccc;
+    box-shadow: inset 0 10px 10px -5px #ccc;
   }
 
   .row > ul:nth-child(3) {
-    padding: 0 9% 0 0 ;
+    margin: 0 9% 0 0 ;
   }
 
+}
+
+/* LARGE-LAYOUT */
+/*TODO: check if stuff breaks at 1200 or not*/
+@media only screen and (min-width: 1195px) and (max-width: 1499px) {
+  span.menu-icon {
+    display: none;
+  }
+
+  header {
+    padding: 40px 4% 52px 4%;
+  }
+
+  .logo-image {
+    background-size: 108px auto;
+    width: 110px;
+    height: 70px;
+    margin: -11px 0 0 224px;
+    position: absolute;
+  }
+
+  .logo h1 {
+    font-size: 3.6em;
+    float: left;
+  }
+
+  .logo .highlight {
+    color: #1ACAC8;
+    margin: 0 0 0 65px;
+  }
+
+  .main {
+    padding: 4%;
+    /*box shadow below*/
+    -webkit-box-shadow: inset 0 10px 6px -6px #ccc;
+    -moz-box-shadow: inset 0 10px 6px -6px #ccc;
+    box-shadow: inset 0 10px 6px -6px #ccc;
+  }
+
+  footer {
+    /*box shadow below*/
+    -webkit-box-shadow: 0 0 6px 4px #ccc;
+    -moz-box-shadow: 0 0 6px 4px #ccc;
+    box-shadow: 0 0 6px 4px #ccc;
+  }
+
+  .nav-bar > li{
+/*    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background: #333;*/
+    border-bottom: solid 4px #1ACAC8;
+    /*background-color: orange;*/
+    /*padding: 0;*/
+    margin-left: -3px;
+    margin-right: -3px;
+    padding: 15px;
+  }
+
+  .nav-bar > li:first-child {
+    padding-left: 0;
+  }
+
+  .nav-bar > li:last-child {
+    padding-right: 0;
+  }
+
+  .nav-bar > li:hover {
+    border-bottom: solid 4px #FFFFFF;
+  }
+
+  .banner, .features {
+    /*box shadow below*/
+    -webkit-box-shadow: 0 0 3px 2px #ccc;
+    -moz-box-shadow: 0 0 3px 2px #ccc;
+    box-shadow: 0 0 3px 2px #ccc;
+  }
+
+  .banner {
+    float: left;
+    width: 732px;
+    border: solid 4px #202227;
+  }
+
+  .features {
+    float: right;
+    width: 332px;
+  }
+
+  footer .row {
+    padding: 60px 38px 30px 38px;
+  }
+
+  .row > ul {
+    padding-left: 30px;
+    border-left: solid 3px #1ACAC8;
+  }
+
+  .row > ul:nth-child(1) {
+    margin: 0 0 0 1%;
+  }
+
+  .row > ul:nth-child(2) {
+    margin: 0 0 0 22.4%;
+  }
+
+  .row > ul:nth-child(3) {
+    margin: 0 19% 0 0;
+  }
+
+  .row > ul > li {
+    line-height: 1em;
+  }
+
+  footer li a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+  }
+
+  footer li:first-child a {
+    padding-top: 0px;
+  }
+
+  footer li:last-child a {
+    padding-bottom: 0px;
+  }
+
+  .copyright-text {
+    color: #202227;
+    font-weight: 900;
+    display: block;
+    background-color: #1ACAC8;
+    padding: 10px 0;
+    margin: 16px 4%;
+  }
 }
