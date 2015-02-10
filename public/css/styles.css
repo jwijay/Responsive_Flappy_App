@@ -14,9 +14,6 @@ html {
   color: #25262C;
 }
 
-body {
-}
-
 /* THEME */
 header, footer {
   width: inherit;
@@ -139,7 +136,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover , nav li:hover a {
   color: #FFFFFF;
 }
 
