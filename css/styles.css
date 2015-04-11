@@ -17,13 +17,13 @@ html {
 /* THEME */
 header, footer {
   width: inherit;
-  background-image: url('/images/border.png');
+  background-image: url('../images/border.png');
   background-repeat: repeat-x;
 }
 
 .logo-image {
   float: left;
-  background-image: url('/images/logo.png');
+  background-image: url('../images/logo.png');
   background-repeat: no-repeat;
   background-size: 80px auto;
   width: 86px;
@@ -76,7 +76,7 @@ header, footer, .features h2{
 
 .banner {
   height: 260px;
-  background-image: url('/images/scenery.png');
+  background-image: url('../images/scenery.png');
   background-size: cover;
   background-position: right;
 }
