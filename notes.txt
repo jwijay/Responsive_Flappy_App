@@ -1,0 +1,132 @@
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+body {
+  background-color: red;
+}
+
+//border, top
+//nav li hover
+
+.main
+.features
+
+most text (li)
+  text-transform: uppercase;
+
+
+
+dark blue:
+#25262C
+
+teal:
+#1ACAC8
+
+white:
+#FFFFFF
+
+"grey":
+#E2E2E2
+
+
+
+
+
+78px
+  nav bar
+
+46px
+  features
+54px
+  stuff in features
+#13918E
+
+320px
+  lead p
+
+294px - footer
+  214px - nav
+  80px - copyright box
+
+
+
+
+400
+768
+1200
+1500
+
+/* old junk */
+.logo {
+  float: left;
+}
+
+.logo-image {
+  float: left;
+  background-image: url('/images/logo.png');
+  background-position: 10px 0;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  background-size: auto auto;
+  margin-top: -16px;
+  width: 150px;
+  height: 100%;
+  z-index: 0;
+  height: 150px;
+}
+
+.logo h1 {
+    font-size: 1.3em;
+    letter-spacing: .2em;
+    padding-top: 17px;
+    padding-left: 100px;
+}
+
+  .logo {
+    background-position: 10px 10px;
+    height: 80px;
+  }
+  
+  .logo span {
+    display: block;
+  }
+
+  .logo h1 {
+    padding-left: 98px;
+  }
+
+   .logo > h1 {
+    float: left;
+    display: block;
+    font-size: 3.4em;
+    padding-left: 0px;
+    z-index: -1;
+    /*background-color: green;*/
+  }
+
+  .logo > h1 > .highlight {
+    float: right;
+    /*display: block;*/
+    margin-left: 80px;
+    /*color: #1ACAC8;*/
+    /*background-color: blue;*/
+  }
+
+  .logo {
+    /*background-color: purple;*/
+    background-size: 116px auto;
+    background-position: 214px 0;
+    height: 70px;
+  }
+
+  .logo-image {
+    float: left;
+    display: block;
+    /*background-color: yellow;*/
+    margin-left: -216px;
+  }
